@@ -36,8 +36,13 @@
   background-size: 70%
 }
 
+.navbar-nav {
+  margin-top: 20px
+}
+
 .nav > li > a {
   letter-spacing: 1.15px
+  font-size: 17px
 }
 
 .navbar-default {
