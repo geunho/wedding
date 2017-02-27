@@ -15,7 +15,7 @@
        <li><a :href="'#/aboutus'">근호 & 미경</a></li>
        <li><a :href="'#/photos'">사진첩</a></li>
        <li><a :href="'#/location'">오시는 길</a></li>
-       <li><a :href="'#/attendance'">참석 여부</a><li>
+       <li><a :href="'#/attendance'">참석 여부</a></li>
      </ul>
     </div>
   </div>
