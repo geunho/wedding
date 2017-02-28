@@ -3,14 +3,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,400italic");
 @import url("https://fonts.googleapis.com/css?family=Signika:400,300");
 @font-face {
-  font-family: 'jeongum';
-  src: url("assets/jeongum.ttf") format('ttf');
+  font-family: 'jeongum_local';
+  src: url("assets/Jeongum.woff") format('woff');
+  src: url("assets/Jeongum.woff2") format('woff2');
 }
 /* Tags */
 body {
   color: #333;
   background: #fff;
-  font-family: 'jeongum', jeongum;
+  font-family: 'jeongum_local', jeongum_local;
   font-size: 14.5px;
 }
 a {
@@ -20,13 +21,15 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'jeongum', jeongum;
+  font-family: 'jeongum_local', jeongum_local;
 }
 .navbar-brand {
-  font-family: 'DainPresent Regular', DainPresent Regular;
+  font-family: 'jeongum_local', jeongum_local;
   font-size: 25px;
   letter-spacing: 1.5px;
   line-height: 0.8em;
+  margin-top: 0px;
+  top: -5px;
 }
 input[type="text"],
 textarea {
@@ -40,7 +43,7 @@ textarea {
   color: #aaa;
 }
 .btn {
-  font-family: 'jeongum', jeongum;
+  font-family: 'jeongum_local', jeongum_local;
 }
 .panel {
   border-color: #e2e2e2;

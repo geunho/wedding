@@ -17,30 +17,35 @@
 </template>
 
 <style lang="stylus">
-@import "../variables"
+@import "../variables";
 
 .navbar {
-  position: relative
-  min-height: 50px
-  margin-bottom: 20px
-  border-color: $border-color
-  /*background-image: url('../assets/cherry-blossom.png')
-  background-repeat: no-repeat
-  background-position: right bottom
-  background-size: 70%*/
+  position: relative;
+  height: 67.5px;
+  margin-bottom: 20px;
+  border-color: $border-color;
+  /*background-image: url('../assets/cherry-blossom.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 70%;*/
 }
 
 .navbar-nav {
-  margin-top: 10px
+  margin-top: 10px;
 }
 
-.nav>li>a>.navbar-list {
-  letter-spacing: 1.15px
-  font-size: 15px
+.nav>li {
+  padding: -5px -5px -5px -5px;
+}
+
+.nav>li>a.navbar-list {
+  letter-spacing: 1.15px;
+  font-size: 15.5px;
+  padding: 15px 10px !important;
 }
 
 .navbar-default {
-  background-color: #fff
+  background-color: #fff;
 }
 
 .navbar-collapse.collapse {
