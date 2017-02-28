@@ -1,0 +1,64 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../node_modules/font-awesome/css/font-awesome.css';
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,400italic");
+@import url("https://fonts.googleapis.com/css?family=Signika:400,300");
+@font-face {
+  font-family: 'jeongum';
+  src: url("assets/jeongum.ttf") format('ttf');
+}
+/* Tags */
+body {
+  color: #333;
+  background: #fff;
+  font-family: 'jeongum', jeongum;
+  font-size: 14.5px;
+}
+a {
+  color: #3ea3d7;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'jeongum', jeongum;
+}
+.navbar-brand {
+  font-family: 'DainPresent Regular', DainPresent Regular;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: 0.8em;
+}
+input[type="text"],
+textarea {
+  outline: none;
+  box-shadow: none !important;
+}
+/* Classes */
+.page-header {
+  margin-top: 0;
+  border-color: #e2e2e2;
+  color: #aaa;
+}
+.btn {
+  font-family: 'jeongum', jeongum;
+}
+.panel {
+  border-color: #e2e2e2;
+  -webkit-box-shadow: 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.panel h3 {
+  margin-top: 0;
+}
+.panel .panel-body > h2 {
+  margin-top: 0;
+}
+.input-group-addon {
+  background-color: #fff;
+  border-color: #e2e2e2;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-radius: 0;
+  padding-right: 0;
+}
