@@ -1,8 +1,6 @@
 <template>
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <!--div class="navbar-header">
-    </div-->
     <div>
       <ul class="nav navbar-nav navbar-left">
        <li><a class="navbar-brand" :href="'#/invite'">05<br>14</a></li>
@@ -19,15 +17,12 @@
 <style lang="stylus">
 @import "../variables";
 
+
 .navbar {
-  position: relative;
+  /*position: relative; */
   height: 67.5px;
   margin-bottom: 20px;
   border-color: $border-color;
-  /*background-image: url('../assets/cherry-blossom.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 70%;*/
 }
 
 .navbar-nav {

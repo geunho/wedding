@@ -1,7 +1,4 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
-@import '../node_modules/font-awesome/css/font-awesome.css';
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,400italic");
-@import url("https://fonts.googleapis.com/css?family=Signika:400,300");
 @font-face {
   font-family: 'jeongum_local';
   src: url("assets/Jeongum.woff") format('woff');
@@ -13,6 +10,7 @@ body {
   background: #fff;
   font-family: 'jeongum_local', jeongum_local;
   font-size: 14.5px;
+  padding-top: 90px;
 }
 a {
   color: #3ea3d7;
@@ -23,13 +21,10 @@ h3,
 h4 {
   font-family: 'jeongum_local', jeongum_local;
 }
-.navbar-brand {
-  font-family: 'jeongum_local', jeongum_local;
-  font-size: 25px;
-  letter-spacing: 1.5px;
-  line-height: 0.8em;
-  margin-top: 0px;
-  top: -5px;
+blockquote {
+  padding: 15px;
+  font-size: 13.5px;
+  border-left: 0px;
 }
 input[type="text"],
 textarea {
@@ -64,4 +59,12 @@ textarea {
   border-right-width: 0;
   border-radius: 0;
   padding-right: 0;
+}
+.navbar-brand {
+  font-family: 'jeongum_local', jeongum_local;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: 0.8em;
+  margin-top: 0px;
+  top: -5px;
 }

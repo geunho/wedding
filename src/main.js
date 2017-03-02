@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs'
 import Photos from './components/Photos'
 import Location from './components/Location'
 import Attendance from './components/Attendance'
+import ProjectList from './components/ProjectList'
 
 Vue.use(Router)
 Vue.use(Resource)
@@ -19,13 +20,10 @@ const router = new Router({
     { path: '/photos', component: Photos },
     { path: '/location', component: Location },
     { path: '/attendance', component: Attendance },
-    { path: '*', redirect: '/invite' }
+    { path: '/projectlist', component: ProjectList },
+    { path: '*', redirect: '/invite'}
   ]
 })
-
-// router.beforeEach(function () {
-//   window.scrollTo(0, 0)
-// })
 
 var app = new Vue({
   router,
