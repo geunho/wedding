@@ -33,7 +33,7 @@ module.exports = {
     'block-scoped-var': 0,
     'brace-style': [2, '1tbs', { 'allowSingleLine': true }],
     'camelcase': 0,
-    'comma-dangle': [2, 'never'],
+    /*'comma-dangle': [2, 'never'],*/
     'comma-spacing': [2, { 'before': false, 'after': true }],
     'comma-style': [2, 'last'],
     'complexity': 0,
@@ -46,7 +46,7 @@ module.exports = {
     'dot-location': [2, 'property'],
     'dot-notation': 0,
     /*'eol-last': 2,*/
-    'eqeqeq': [2, 'allow-null'],
+    /*'eqeqeq': [2, 'allow-null'],*/
     'func-names': 0,
     'func-style': 0,
     'generator-star-spacing': [2, { 'before': true, 'after': true }],
@@ -136,9 +136,9 @@ module.exports = {
     'no-sync': 0,
     'no-ternary': 0,
     'no-this-before-super': 2,
-    'no-throw-literal': 2,
+    /*'no-throw-literal': 2,*/
     'no-trailing-spaces': 2,
-    'no-undef': 2,
+    /*'no-undef': 2,*/
     'no-undef-init': 2,
     'no-undefined': 0,
     'no-underscore-dangle': 0,
@@ -160,14 +160,14 @@ module.exports = {
     'padded-blocks': 0,
     'prefer-const': 0,
     'quote-props': 0,
-    'quotes': [2, 'single', 'avoid-escape'],
+    /*'quotes': [2, 'single', 'avoid-escape'],*/
     'radix': 2,
-    'semi': [2, 'never'],
+    /*'semi': [2, 'never'],*/
     'semi-spacing': 0,
     'sort-vars': 0,
     'space-after-keywords': [2, 'always'],
     'space-before-blocks': [2, 'always'],
-    'space-before-function-paren': [2, 'always'],
+    /*'space-before-function-paren': [2, 'always'],*/
     'space-in-parens': [2, 'never'],
     'space-infix-ops': 2,
     'space-return-throw-case': 2,

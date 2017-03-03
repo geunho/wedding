@@ -1,11 +1,15 @@
 <template>
   <!-- header -->
   <div class="row">
+    <div id="nav">
+      <a href="#/location/suncheon">1</a>
+      <a href="#/location/jeju">2</a>
+    </div>
     <div class="col-md-9">
       <h4 class="page-header">초대합니다.</h4>
 
       <!-- 메인 이미지! -->
-      <img src="../assets/cherry-blossom.png" class="img-responsive">
+      <img src="../assets/main_us.jpeg" class="img-responsive img-rounded">
 
       <blockquote>
         <p>서로의 이름을 부르는 것만으로도</p>
@@ -24,35 +28,34 @@
       <br>
       <br>
       <div>
-        <h4>피로연</h4>
+        <h4><b>피로연</b></h4>
         <p>2017년 4월 29일 저녁 6시</p>
         <p>
-          전라남도 순천시 오천동 순찬만길 71
+          전라남도 순천시 오천동 순천만길 71
           <br>
           순천 더 혜윰
-          <a class="cal-link" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NTNkcDNmbzNmNzc2NGY2ZzB1MWdmcTVqY28gazk3Y2pxNjlrZ2VjamF1ZnJvMW11NWxzOW9AZw&amp;tmsrc=k97cjq69kgecjaufro1mu5ls9o%40group.calendar.google.com">
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+          <a class="loc-link" :href="'#/location/suncheon'">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
           </a>
         </p>
-
-
       </div>
       <br>
       <div>
-        <h4>결혼식</h4>
+        <h4><b>결혼식</b></h4>
         <p>2017 5월 14일 아침 10시 30분</p>
         <p>
           제주특별자치도 제주시 삼도2동 1255
           <br>
           라마다 프라자 호텔, 8층 탐라홀
-          <a class="cal-link" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=cjlybXJqcDFhbTc3cDB2dHFpMzBsdHM4b28gazk3Y2pxNjlrZ2VjamF1ZnJvMW11NWxzOW9AZw&amp;tmsrc=k97cjq69kgecjaufro1mu5ls9o%40group.calendar.google.com">
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+          <a class="loc-link" :href="'#/location/jeju'">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
           </a>
         </p>
       </div>
     </div>
-  </div>
 
+    <br><br><br><br>
+  </div>
 </template>
 
 <script>
@@ -86,7 +89,7 @@
 <style lang="stylus">
 @import "../variables";
 
-a.cal-link {
+a.loc-link {
   color: $text-color
 }
 

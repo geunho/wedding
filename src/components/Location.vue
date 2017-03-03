@@ -2,26 +2,52 @@
   <div class="row">
     <div class="col-md-9">
       <h4 class="page-header">오시는 길</h4>
-      <!-- 지도 Vue -->
-      2017년 4월 29일 토요일 늦은 6시
-
-      순천 더헤윰 @@홀
-      (버튼 추가: 일정 등록으로 연동)
-      주소: 순천시 @@@ @@@ 더헤윰
-
-      TEL: 061-@@@@@@@
-      [네이버 지도 어플 길찾기로 연동]
-
-      2017년 5월 14일 일요일 아침 10시 30분
-
-      제주 라마다 프라자 호텔 8층 탐라홀
-
-      (버튼 추가: 일정 등록으로 연동)
-
-      주소: 제줃 제주시 ~~~~~
-      TEL: 064-@@@
-      [네이버 지도 어플 길찾기로 연동]
     </div>
+
+    <div id="suncheon" class="col-md-9 location-header">
+      <h4>순천 피로연 장소</h4>
+    </div>
+    <div class="col-md-9 map-container" id="map-suncheon"></div>
+    <div class="col-md-9 location-body">
+      <p>순천 더 혜윰</p>
+      <p class="p-inner">
+        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 전라남도 순천시 오천동 순천만길 71
+      </p>
+      <p class="p-inner">
+        <a href="tel:0617453636" class="loc-link">
+          <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+          061-745-3636
+        </a>
+      </p>
+    </div>
+
+    <br>
+
+    <div id="jeju" class="col-md-9 location-header">
+      <h4>제주 결혼식 장소</h4>
+    </div>
+    <div class="col-md-9 map-container" id="map-jeju"></div>
+    <div class="col-md-9 location-body">
+      <p>라마다 프라자 호텔, 8층 탐라홀</p>
+      <p class="p-inner">
+        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 제주특별자치도 제주시 삼도2동 1255
+      </p>
+      <p class="p-inner">
+        <a href="tel:0647298100" class="loc-link">
+          <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+          064-729-8100
+        </a>
+      </p>
+
+      <p class="p-inner">
+        <a href="http://www.ramadajeju.co.kr/" target="_blank" class="loc-link">
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+          http://www.ramadajeju.co.kr/
+        </a>
+      </p>
+    </div>
+
+    <br><br><br><br>
   </div>
 </template>
 
@@ -49,6 +75,78 @@
        this.feeds = response.data
        })
        */
+    },
+
+    mounted: function () {
+      // Load Map.js
+      var el = document.createElement('script')
+      el.onload = function () {
+        var suncheonMap = new naver.maps.Map('map-suncheon', {
+          center: new naver.maps.LatLng(34.9225387, 127.4944749),
+          zoom: 9,
+          minZoom: 1,
+          zoomControl: true,
+          zoomControlOptions: {
+            position: naver.maps.Position.TOP_RIGHT
+          },
+          draggable: false,
+          pinchZoom: false,
+          scrollWheel: false,
+          keyboardShortcuts: false,
+          disableDoubleTapZoom: true,
+          disableDoubleClickZoom: true,
+          disableTwoFingerTapZoom: true
+        })
+
+        var jejuMap = new naver.maps.Map('map-jeju', {
+          center: new naver.maps.LatLng(33.5185371, 126.5191478),
+          zoom: 9,
+          minZoom: 1,
+          zoomControl: true,
+          zoomControlOptions: {
+            position: naver.maps.Position.TOP_RIGHT
+          },
+          draggable: false,
+          pinchZoom: false,
+          scrollWheel: false,
+          keyboardShortcuts: false,
+          disableDoubleTapZoom: true,
+          disableDoubleClickZoom: true,
+          disableTwoFingerTapZoom: true
+        })
+      }
+      el.setAttribute('type', 'text/javascript')
+      el.setAttribute('src', 'https://openapi.map.naver.com/openapi/v3/maps.js?clientId=XijwVoHfiRYgMpPWAf0b')
+      document.getElementsByTagName('head')[0].appendChild(el)
     }
   }
 </script>
+
+<style lang="stylus">
+@import "../variables";
+
+a.loc-link {
+  color: $text-color
+}
+
+p.p-inner {
+  padding-left: 10px
+}
+
+.location-header {
+  padding-top: 10px
+}
+
+.location-body {
+  padding-top: 10px
+}
+
+
+.map-container {
+  width: 100%
+  height: 250px
+  padding-left: 0
+  padding-right: 0
+}
+
+</style>
