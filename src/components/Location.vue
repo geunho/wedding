@@ -16,7 +16,7 @@
       <p class="p-inner">
         <a href="tel:0617453636" class="loc-link">
           <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-          061-745-3636
+          061-745-3636 <span class="map-link">통화하기</span>
         </a>
       </p>
     </div>
@@ -35,7 +35,7 @@
       <p class="p-inner">
         <a href="tel:0647298100" class="loc-link">
           <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-          064-729-8100
+          064-729-8100 <span class="map-link">통화하기</span>
         </a>
       </p>
 
@@ -100,10 +100,6 @@
           map: suncheonMap,
           position: suncheonPosition
         })
-        var suncheonInfo = new naver.maps.InfoWindow({
-          content: '<p>순천 더 헤윰</p>'
-        })
-        suncheonInfo.open(suncheonMap, suncheonMarker)
 
         // 제주 라마다 지도
         var jejuPosition = new naver.maps.LatLng(33.518546, 126.519191)
@@ -127,10 +123,6 @@
           map: jejuMap,
           position: jejuPosition
         })
-        var jejuInfo = new naver.maps.InfoWindow({
-          content: '<p>제주 라마다 호텔</p>'
-        })
-        jejuInfo.open(jejuMap, jejuMarker)
       }
       el.setAttribute('type', 'text/javascript')
       el.setAttribute('src', 'https://openapi.map.naver.com/openapi/v3/maps.js?clientId=XijwVoHfiRYgMpPWAf0b')
@@ -150,6 +142,11 @@ p.p-inner {
   padding-left: 10px
 }
 
+span.map-link {
+  font-size: 13px
+  border-color: $border-color
+}
+
 .location-header {
   padding-top: 10px
 }
@@ -157,7 +154,6 @@ p.p-inner {
 .location-body {
   padding-top: 10px
 }
-
 
 .map-container {
   width: 100%

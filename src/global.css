@@ -39,10 +39,20 @@ textarea {
   box-shadow: none !important;
 }
 /* Classes */
+.container-footer {
+  height: 70px;
+  font-size: 11px;
+  background-color: #fafafa;
+}
 .page-header {
   margin-top: 0;
   border-color: #e2e2e2;
   color: #aaa;
+}
+.map-container {
+  border-color: #e2e2e2;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .btn {
   font-family: 'Jeongum';

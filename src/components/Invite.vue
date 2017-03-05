@@ -18,8 +18,16 @@
       </blockquote>
 
       <div class="text-center">
-      <p>장남 근호</p>
-      <p>장녀 미경</p>
+        <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+      </div>
+      <br>
+      <div class="text-center">
+        <p>장남 근호</p>
+        <p>장녀 미경</p>
+      </div>
+      <br>
+      <div class="text-center">
+        <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
       </div>
       <br>
       <br>

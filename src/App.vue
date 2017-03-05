@@ -8,6 +8,10 @@
       transition
       transition-mode="out-in"></router-view>
   </div>
+  <footer class="container-footer text-center">
+    <br><br>
+    <span class="glyphicon glyphicon-grain"></span> 근 호  &  미 경
+  </footer>
 </div>
 </template>
 
