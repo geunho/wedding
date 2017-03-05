@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-9 map-container" id="map-suncheon"></div>
     <div class="col-md-9 location-body">
-      <p>순천 더 혜윰</p>
+      <p>순천 더 헤윰</p>
       <p class="p-inner">
         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 전라남도 순천시 오천동 순천만길 71
       </p>
@@ -77,25 +77,38 @@
       // Load Map.js
       var el = document.createElement('script')
       el.onload = function () {
-        var suncheonMap = new naver.maps.Map('map-suncheon', {
-          center: new naver.maps.LatLng(34.9225387, 127.4944749),
-          zoom: 9,
-          minZoom: 1,
-          zoomControl: true,
-          zoomControlOptions: {
-            position: naver.maps.Position.TOP_RIGHT
-          },
-          draggable: false,
-          pinchZoom: false,
-          scrollWheel: false,
-          keyboardShortcuts: false,
-          disableDoubleTapZoom: true,
-          disableDoubleClickZoom: true,
-          disableTwoFingerTapZoom: true
-        })
 
+        // 순천 더 헤윰 지도
+        var suncheonPosition = new naver.maps.LatLng(34.922533, 127.496672)
+        var suncheonMap = new naver.maps.Map('map-suncheon', {
+          center: suncheonPosition,
+          zoom: 10,
+          minZoom: 1,
+          zoomControl: true,
+          zoomControlOptions: {
+            position: naver.maps.Position.TOP_RIGHT
+          },
+          draggable: false,
+          pinchZoom: false,
+          scrollWheel: false,
+          keyboardShortcuts: false,
+          disableDoubleTapZoom: true,
+          disableDoubleClickZoom: true,
+          disableTwoFingerTapZoom: true
+        })
+        var suncheonMarker = new naver.maps.Marker({
+          map: suncheonMap,
+          position: suncheonPosition
+        })
+        var suncheonInfo = new naver.maps.InfoWindow({
+          content: '<p>순천 더 헤윰</p>'
+        })
+        suncheonInfo.open(suncheonMap, suncheonMarker)
+
+        // 제주 라마다 지도
+        var jejuPosition = new naver.maps.LatLng(33.518546, 126.519191)
         var jejuMap = new naver.maps.Map('map-jeju', {
-          center: new naver.maps.LatLng(33.5185371, 126.5191478),
+          center: jejuPosition,
           zoom: 9,
           minZoom: 1,
           zoomControl: true,
@@ -110,6 +123,14 @@
           disableDoubleClickZoom: true,
           disableTwoFingerTapZoom: true
         })
+        var jejuMarker = new naver.maps.Marker({
+          map: jejuMap,
+          position: jejuPosition
+        })
+        var jejuInfo = new naver.maps.InfoWindow({
+          content: '<p>제주 라마다 호텔</p>'
+        })
+        jejuInfo.open(jejuMap, jejuMarker)
       }
       el.setAttribute('type', 'text/javascript')
       el.setAttribute('src', 'https://openapi.map.naver.com/openapi/v3/maps.js?clientId=XijwVoHfiRYgMpPWAf0b')

@@ -29,7 +29,7 @@
         <p>
           전라남도 순천시 오천동 순천만길 71
           <br>
-          순천 더 혜윰
+          순천 더 헤윰
           <a class="loc-link" :href="'/location#suncheon'">
             <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><span class="map-link">지도보기</span>
           </a>
