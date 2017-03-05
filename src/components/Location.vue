@@ -61,10 +61,6 @@
 
     data () {
       return {
-        title: '',
-        content: '',
-        projects: [],
-        feeds: []
       }
     },
 

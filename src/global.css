@@ -1,14 +1,19 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 @font-face {
-  font-family: 'jeongum_local';
-  src: url("assets/Jeongum.woff") format('woff');
-  src: url("assets/Jeongum.woff2") format('woff2');
+  font-family: 'Jeongum';
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff2") format('woff2'), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff") format('woff');
+}
+.jeongum * {
+  font-family: 'Jeongum', serif;
 }
 /* Tags */
 body {
   color: #333;
   background: #fff;
-  font-family: 'jeongum_local', jeongum_local;
+  font-family: 'Jeongum';
+  font-weight: 300;
   font-size: 14.5px;
   padding-top: 90px;
 }
@@ -18,8 +23,10 @@ a {
 h1,
 h2,
 h3,
-h4 {
-  font-family: 'jeongum_local', jeongum_local;
+h4,
+h5 {
+  font-family: 'Jeongum';
+  font-weight: 300;
 }
 blockquote {
   padding: 15px;
@@ -38,7 +45,8 @@ textarea {
   color: #aaa;
 }
 .btn {
-  font-family: 'jeongum_local', jeongum_local;
+  font-family: 'Jeongum';
+  font-weight: 300;
 }
 .panel {
   border-color: #e2e2e2;
@@ -61,7 +69,8 @@ textarea {
   padding-right: 0;
 }
 .navbar-brand {
-  font-family: 'jeongum_local', jeongum_local;
+  font-family: 'Jeongum';
+  font-weight: 300;
   font-size: 25px;
   letter-spacing: 1.5px;
   line-height: 0.8em;

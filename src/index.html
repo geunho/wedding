@@ -7,7 +7,7 @@
     <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">{% } %}
     <!--script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=XijwVoHfiRYgMpPWAf0b"></script-->
   </head>
-  <body data-spy="scroll" data-target="#app">
+  <body>
     <div id="app"></div>{% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
     <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>{% } %}
   </body>

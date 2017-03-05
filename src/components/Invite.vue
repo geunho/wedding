@@ -1,10 +1,6 @@
 <template>
   <!-- header -->
   <div class="row">
-    <div id="nav">
-      <a href="#/location/suncheon">1</a>
-      <a href="#/location/jeju">2</a>
-    </div>
     <div class="col-md-9">
       <h4 class="page-header">초대합니다.</h4>
 
@@ -34,8 +30,8 @@
           전라남도 순천시 오천동 순천만길 71
           <br>
           순천 더 혜윰
-          <a class="loc-link" :href="'#/location/suncheon'">
-            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+          <a class="loc-link" :href="'/location#suncheon'">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><span class="map-link">지도보기</span>
           </a>
         </p>
       </div>
@@ -47,8 +43,8 @@
           제주특별자치도 제주시 삼도2동 1255
           <br>
           라마다 프라자 호텔, 8층 탐라홀
-          <a class="loc-link" :href="'#/location/jeju'">
-            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+          <a class="loc-link" :href="'/location#jeju'">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><span class="map-link">지도보기</span>
           </a>
         </p>
       </div>
@@ -68,10 +64,7 @@
 
     data () {
       return {
-        title: '',
-        content: '',
-        projects: [],
-        feeds: []
+        title: ''
       }
     },
 
@@ -93,4 +86,8 @@ a.loc-link {
   color: $text-color
 }
 
+span.map-link {
+  font-size: 13px
+  border-color: $border-color
+}
 </style>

@@ -34,7 +34,7 @@ module.exports = {
         loader: 'json'
       },
       {
-        test: /\.(png|jpg|gif|svg|jpeg)$/,
+        test: /\.(png|jpe?g|gif|svg)$/,
         loader: 'url',
         query: {
           limit: 10000,
@@ -47,7 +47,11 @@ module.exports = {
 
       { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&minetype=application/font-woff" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" }
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
+      {
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
+        loader: 'image-webpack'
+      }
     ]
   },
   vue: {
@@ -57,5 +61,24 @@ module.exports = {
   },
   eslint: {
     formatter: require('eslint-friendly-formatter')
+  },
+  imageWebpackLoader: {
+    mozjpeg: {
+      quality: 25
+    },
+    pngquant:{
+      quality: "65-90",
+      speed: 4
+    },
+    svgo:{
+      plugins: [
+        {
+          removeViewBox: false
+        },
+        {
+          removeEmptyAttrs: false
+        }
+      ]
+    }
   }
 }
