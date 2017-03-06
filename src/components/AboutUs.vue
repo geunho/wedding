@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-xs-12">
       <h4 class="page-header">근호 & 미경</h4>
       2017.5.14. 우리 결혼해요
       [웨딩스냅사진]

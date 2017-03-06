@@ -2,6 +2,7 @@ var webpack = require('webpack')
 var config = require('./webpack.base.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var CompressionPlugin = require("compression-webpack-plugin");
 
 // naming output files with hashes for better caching.
 // dist/index.html will be auto-generated with correct URLs.
@@ -51,6 +52,13 @@ config.plugins = (config.plugins || []).concat([
   new HtmlWebpackPlugin({
     filename: '../index.html',
     template: 'src/index.html'
+  }),
+  new CompressionPlugin({
+    asset: "[path].gz[query]",
+    algorithm: "gzip",
+    test: /\.js$|\.css$|\.html$/,
+    threshold: 10240,
+    minRatio: 0.8
   })
 ])
 

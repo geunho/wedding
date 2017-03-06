@@ -1,25 +1,27 @@
 <template>
 <div id="wrapper">
   <top-nav></top-nav>
-  <div class="container">
-    <router-view
-      class="view"
-      keep-alive
-      transition
-      transition-mode="out-in"></router-view>
-  </div>
-  <footer class="container-footer text-center">
-    <br><br>
-    <span class="glyphicon glyphicon-grain"></span> 근 호  &  미 경
-  </footer>
+  <transition name="fade-down" mode="out-in" appear>
+    <div class="container">
+      <router-view
+        class="view"
+        keep-alive
+        transition
+        transition-mode="out-in">
+      </router-view>
+    </div>
+  </transition>
+  <main-footer></main-footer>
 </div>
 </template>
 
-<script>
+<script async>
 import TopNav from './components/TopNav'
+import MainFooter from './components/MainFooter'
 export default {
   components: {
-    TopNav
+    TopNav,
+    MainFooter
   }
 }
 </script>

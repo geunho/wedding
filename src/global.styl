@@ -48,12 +48,6 @@ input[type="text"], textarea {
 
 /* Classes */
 
-.container-footer {
-  height: 70px
-  font-size: 11px
-  background-color: #fafafa
-}
-
 .page-header {
   margin-top: 0
   border-color: $border-color
@@ -102,4 +96,26 @@ input[type="text"], textarea {
   line-height: 0.8em
   margin-top: 0px
   top: -5px
+}
+
+/* Animations */
+
+.fade-down-enter-active {
+  animation-name: fadeInDown;
+  animation-duration: 0.5s;
+}
+
+.fade-down-leave-active {
+  animation-name: fadeOutDown;
+  animation-duration: 0.4s;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0.05; transform: translate3d(0, -25px, 0); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes fadeOutDown {
+  from {  opacity: 1; transform: none; }
+  to { opacity: 0.05; transform: translate3d(0, -25px, 0); }
 }

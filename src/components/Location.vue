@@ -1,14 +1,14 @@
 <template>
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-xs-12">
       <h4 class="page-header">오시는 길</h4>
     </div>
 
     <div id="suncheon" class="col-md-9 location-header">
       <h4>순천 피로연 장소</h4>
     </div>
-    <div class="col-md-9 map-container" id="map-suncheon"></div>
-    <div class="col-md-9 location-body">
+    <div class="col-xs-12 map-container" id="map-suncheon"></div>
+    <div class="col-xs-12 location-body">
       <p>순천 더 헤윰</p>
       <p class="p-inner">
         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 전라남도 순천시 오천동 순천만길 71
@@ -26,8 +26,8 @@
     <div id="jeju" class="col-md-9 location-header">
       <h4>제주 결혼식 장소</h4>
     </div>
-    <div class="col-md-9 map-container" id="map-jeju"></div>
-    <div class="col-md-9 location-body">
+    <div class="col-xs-12 map-container" id="map-jeju"></div>
+    <div class="col-xs-12 location-body">
       <p>라마다 프라자 호텔, 8층 탐라홀</p>
       <p class="p-inner">
         <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 제주특별자치도 제주시 삼도2동 1255
