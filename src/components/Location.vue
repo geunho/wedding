@@ -4,7 +4,7 @@
       <h4 class="page-header">오시는 길</h4>
     </div>
 
-    <div id="suncheon" class="col-md-9 location-header">
+    <div id="suncheon" class="col-xs-12 location-header">
       <h4>순천 피로연 장소</h4>
     </div>
     <div class="col-xs-12 map-container" id="map-suncheon"></div>
@@ -23,7 +23,7 @@
 
     <br>
 
-    <div id="jeju" class="col-md-9 location-header">
+    <div id="jeju" class="col-xs-12 location-header">
       <h4>제주 결혼식 장소</h4>
     </div>
     <div class="col-xs-12 map-container" id="map-jeju"></div>

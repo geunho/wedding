@@ -1,7 +1,7 @@
 <template>
   <!-- header -->
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-md-9">
       <h4 class="page-header">초대합니다.</h4>
 
       <!-- 메인 이미지! -->
@@ -14,7 +14,7 @@
         <p>서로의 모든 것이 되기 위해</p>
         <p>오랜 기다림 끝에 혼례식을 치르는 날</p>
         <p>세상은 더욱 아름다워라</p>
-        <footer><cite title="이혜인">이혜인</cite>, '사랑의 사람들이여' 중에서</footer>
+        <footer><cite title="이헤인">이헤인</cite>, '사랑의 사람들이여' 중에서</footer>
       </blockquote>
 
       <div class="text-center">
@@ -97,5 +97,6 @@ a.loc-link {
 span.map-link {
   font-size: 13px
   border-color: $border-color
+  font-weight: bold
 }
 </style>

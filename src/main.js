@@ -20,19 +20,15 @@ const router = new Router({
     { path: '/aboutus', component: AboutUs },
     { path: '/photos', component: Photos },
     { path: '/location', component: Location },
-    { path: '/location#suncheon', component: Location, props: { position: 'suncheon' } },
-    { path: '/location#jeju', component: Location, props: { position: 'jeju' } },
+    { path: '/location#suncheon', component: Location },
+    { path: '/location#jeju', component: Location },
     { path: '/attendance', component: Attendance },
     { path: '/projectlist', component: ProjectList },
     { path: '*', redirect: '/invite'}
   ],
   scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    } else if (to.hash) {
-      return { selector: to.hash }
-    } else {
-      return { x: 0, y: 0 }
+    if (to.hash) {
+      return { selector: to.hash };
     }
   }
 })

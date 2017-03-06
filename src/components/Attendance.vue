@@ -9,16 +9,7 @@
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-xs-6">
-        참석 여부 form
-      </div>
-
-      <div class="col-xs-6">
-        제출전 결과창
-      </div>
-    </div>
+    <br>
   </div>
 </template>
 
@@ -32,7 +23,10 @@
 
     data () {
       return {
-        title: ''
+        name: '',
+        where: '',
+        when: '',
+        isSubmitted: false
       }
     },
 
@@ -43,6 +37,27 @@
        this.feeds = response.data
        })
        */
+    },
+
+    methods: {
+      submit: function () {
+        this.isSubmitted = true
+
+        /*
+        this.$http.post('http://localhost:8090/api/attendence', {
+          name: this.name,
+          where: this.where,
+          when: this.when
+        }).then(response => {
+
+        })
+        */
+
+        this.name = ''
+        this.where = ''
+        this.when = ''
+        this.isSubmitted = false
+      }
     }
   }
 </script>
@@ -50,6 +65,14 @@
 <style lang="stylus">
 @import "../variables";
 
+div.radio {
+  margin-bottom: 30px
+}
+
+div.form-container {
+  margin-left: 45px
+  color: #707070
+}
 .page-body {
   margin-left: 10px
   font-size: 13.5px
