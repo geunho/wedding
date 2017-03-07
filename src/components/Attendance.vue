@@ -1,5 +1,6 @@
 <template>
   <div>
+    <modal v-if="isSubmitted" @close="isSubmitted = false" :_name="name" :_where="where"></modal>
     <div class="row">
       <div class="col-xs-12">
         <h4 class="page-header">참석 여부</h4>
@@ -10,56 +11,81 @@
       </div>
     </div>
     <br>
+    <div class="row">
+      <div class="col-xs-7 form-container">
+        <form>
+          <div class="form-group">
+            <label for="attendanceInputName">성 함</label>
+            <input v-model="name" type="text" id="attendanceInputName" placeholder="성함을 입력해주세요." class="form-control">
+          </div>
+          <div class="radio">
+            <h5><b>어디로 오시나요?</b></h5>
+            <label>
+              <input v-model="where" type="radio" name="where" id="optionSuncheon" value="순천 피로연"> 순천 피로연
+            </label>
+            <label>
+              <input v-model="where" type="radio" name="where" id="optionJeju" value="제주도 결혼식"> 제주도 결혼식
+            </label>
+          </div>
+          <div class="radio">
+            <h5><b>제주도로 오시면 언제 오시나요?</b></h5>
+            <label>
+              <input v-model="when" type="radio" name="when" id="optionYesterday" value="하루 혹은 그 전날"> 하루 혹은 그 전날
+            </label>
+            <label>
+              <input v-model="when" type="radio" name="when" id="optionToday" value="당일"> 당일
+            </label>
+          </div>
+          <div type="submit" class="btn btn-default" v-on:click="submit()">확인</div>
+        </form>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Attendance',
+import Modal from './SuccessModal'
 
-    components: {
+export default {
+  name: 'Attendance',
 
-    },
+  components: {
+    Modal
+  },
 
-    data () {
-      return {
-        name: '',
-        where: '',
-        when: '',
-        isSubmitted: false
-      }
-    },
+  data () {
+    return {
+      name: '',
+      where: '',
+      when: '',
+      isSubmitted: false
+    }
+  },
 
-    created () {
-      // API 호출이 필요할지 검토.
-      /*
-       this.$http.get('http://localhost:8090/api/stories').then(response => {
-       this.feeds = response.data
-       })
-       */
-    },
+  created () {
+    // API 호출이 필요할지 검토.
+    /*
+     this.$http.get('http://localhost:8090/api/stories').then(response => {
+     this.feeds = response.data
+     })
+     */
+  },
 
-    methods: {
-      submit: function () {
-        this.isSubmitted = true
-
-        /*
-        this.$http.post('http://localhost:8090/api/attendence', {
+  methods: {
+    submit: function () {
+      if (this.name != '' && this.where != '') {
+        this.$http.post('http://geunho-mikyeong.com/api/attendance', {
           name: this.name,
           where: this.where,
           when: this.when
         }).then(response => {
-
+          this.isSubmitted = true
+          console.log(JSON.stringify(response))
         })
-        */
-
-        this.name = ''
-        this.where = ''
-        this.when = ''
-        this.isSubmitted = false
       }
     }
   }
+}
 </script>
 
 <style lang="stylus">

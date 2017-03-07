@@ -1,20 +1,27 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
 @font-face {
+  font-family: 'kyeongpil';
+  src: url("assets/DXKPMB-KSCpc-EUC-H.ttf") format('truetype');
+}
+/*
+@font-face {
   font-family: 'Jeongum';
   font-style: normal;
   font-weight: 300;
-  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff2") format('woff2'), url("//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff") format('woff');
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff') format('woff')
 }
+
 .jeongum * {
   font-family: 'Jeongum', serif;
 }
+*/
 /* Tags */
 body {
   color: #333;
   background: #fff;
-  font-family: 'Jeongum';
+  font-family: 'kyeongpil', kyeongpil;
   font-weight: 300;
-  font-size: 14.5px;
+  font-size: 15.5px;
   padding-top: 90px;
 }
 a {
@@ -25,12 +32,12 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Jeongum';
+  font-family: 'kyeongpil', kyeongpil;
   font-weight: 300;
 }
 blockquote {
-  padding: 15px;
-  font-size: 13.5px;
+  padding: 16px;
+  font-size: 14.5px;
   border-left: 0px;
 }
 input[type="text"],
@@ -50,7 +57,7 @@ textarea {
   border-bottom: 1px solid #eee;
 }
 .btn {
-  font-family: 'Jeongum';
+  font-family: 'kyeongpil', kyeongpil;
   font-weight: 300;
 }
 .panel {
@@ -74,7 +81,7 @@ textarea {
   padding-right: 0;
 }
 .navbar-brand {
-  font-family: 'Jeongum';
+  font-family: 'kyeongpil', kyeongpil;
   font-weight: 300;
   font-size: 25px;
   letter-spacing: 1.5px;

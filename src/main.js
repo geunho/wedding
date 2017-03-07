@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs'
 import Photos from './components/Photos'
 import Location from './components/Location'
 import Attendance from './components/Attendance'
+import AttendanceList from './components/AttendeeList'
 import ProjectList from './components/ProjectList'
 
 Vue.use(Router)
@@ -20,9 +21,8 @@ const router = new Router({
     { path: '/aboutus', component: AboutUs },
     { path: '/photos', component: Photos },
     { path: '/location', component: Location },
-    { path: '/location#suncheon', component: Location },
-    { path: '/location#jeju', component: Location },
     { path: '/attendance', component: Attendance },
+    { path: '/attendancelist', component: AttendanceList },
     { path: '/projectlist', component: ProjectList },
     { path: '*', redirect: '/invite'}
   ],

@@ -31,11 +31,11 @@ export default {
 
   methods: {
     submit () {
-      this.$http.post('http://localhost:8090/api/projects', {
+      this.$http.post('http://geunho-mikyeong.com/api/projects', {
         title: this.title,
         content: this.content
       }).then(response => {
-        this.$http.get('http://localhost:8090/api/projects').then(response => {
+        this.$http.get('http://geunho-mikyeong.com/api/projects').then(response => {
           this.projects = response.data
         })
       })

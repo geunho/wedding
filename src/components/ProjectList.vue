@@ -30,7 +30,7 @@ export default {
   },
 
   created () {
-    this.$http.get('http://localhost:8090/api/feeds').then(response => {
+    this.$http.get('http://geunho-mikyeong.com/api/feeds').then(response => {
       this.feeds = response.data
     })
   }

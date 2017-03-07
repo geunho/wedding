@@ -15,7 +15,7 @@
 </div>
 </template>
 
-<script async>
+<script>
 import TopNav from './components/TopNav'
 import MainFooter from './components/MainFooter'
 export default {

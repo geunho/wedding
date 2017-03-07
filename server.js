@@ -1,7 +1,7 @@
 const express = require('express')
 const webpack = require('webpack')
 const config = require('./build/webpack.dev.conf')
-const router = require('./src/router/api-router')
+const router = require('./lib/router/api-router')
 
 const app = express()
 const compiler = webpack(config)
@@ -18,8 +18,15 @@ app.use(require('webpack-dev-middleware')(compiler, {
   }
 }))
 
-// enable hot-reload and state-preserving
-// compilation error display
+// CORS
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST')
+  res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+
+  next()
+});
+
 app.use(require('webpack-hot-middleware')(compiler))
 
 app.use('/api', router)
