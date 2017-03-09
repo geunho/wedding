@@ -1,7 +1,7 @@
 <template>
   <!-- header -->
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-xs-12">
       <h4 class="page-header">초대합니다.</h4>
 
       <!-- 메인 이미지! -->

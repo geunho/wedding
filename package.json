@@ -62,6 +62,7 @@
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
+    "vue-lazyload": "^1.0.0-rc12",
     "vue-loader": "^11.1.2",
     "vue-style-loader": "^1.0.0",
     "vueify": "^9.2.4",

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
+import LazyLoad from 'vue-lazyload'
 import App from './App'
 
 import Invite from './components/Invite'
@@ -9,10 +10,10 @@ import Photos from './components/Photos'
 import Location from './components/Location'
 import Attendance from './components/Attendance'
 import AttendanceList from './components/AttendeeList'
-import ProjectList from './components/ProjectList'
 
 Vue.use(Router)
 Vue.use(Resource)
+Vue.use(LazyLoad)
 
 const router = new Router({
   mode: 'history',
@@ -23,7 +24,6 @@ const router = new Router({
     { path: '/location', component: Location },
     { path: '/attendance', component: Attendance },
     { path: '/attendancelist', component: AttendanceList },
-    { path: '/projectlist', component: ProjectList },
     { path: '*', redirect: '/invite'}
   ],
   scrollBehavior (to, from, savedPosition) {

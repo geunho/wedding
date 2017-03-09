@@ -2,7 +2,7 @@
 <div id="wrapper">
   <top-nav></top-nav>
   <transition name="fade-down" mode="out-in" appear>
-    <div class="container">
+    <div class="container main-container">
       <router-view
         class="view"
         keep-alive
@@ -28,4 +28,9 @@ export default {
 
 <style lang="stylus">
 @import "./global"
+
+.main-container {
+  max-width: 30em
+  margin: 0 auto
+}
 </style>
