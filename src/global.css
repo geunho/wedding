@@ -1,27 +1,18 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
+/*
 @font-face {
   font-family: 'kyeongpil';
   src: url("assets/DXKPMB-KSCpc-EUC-H.ttf") format('truetype');
-}
-/*
-@font-face {
-  font-family: 'Jeongum';
-  font-style: normal;
-  font-weight: 300;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/seoul/Jeongum/Jeongum.woff') format('woff')
-}
-
-.jeongum * {
-  font-family: 'Jeongum', serif;
 }
 */
 /* Tags */
 body {
   color: #333;
   background: #fff;
-  font-family: 'kyeongpil', kyeongpil;
+/*font-family: 'Nanum Pen Script',*/
+/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
-  font-size: 15.5px;
+  font-size: 16px;
   padding-top: 90px;
 }
 a {
@@ -32,24 +23,47 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'kyeongpil', kyeongpil;
+/*font-family: 'Nanum Pen Script',*/
+/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
 }
 blockquote {
   padding: 16px;
-  font-size: 14.5px;
+  font-size: 15px;
   border-left: 0px;
 }
 input[type="text"],
 textarea {
   outline: none;
   box-shadow: none !important;
+  font-size: 16px;
 }
 /* Classes */
+.col-xs-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 .page-header {
   margin-top: 0;
   border-color: #e2e2e2;
   color: #aaa;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.page-body {
+  margin-left: 10px;
+  font-size: 15px;
+/*color: #4f4f4f*/
+}
+.panel-default {
+  border-radius: 0px;
+}
+.panel-default > .panel-heading {
+  background-color: #fdfdfd;
+  padding: 2px 15px;
+}
+.panel-body {
+  font-size: 15px;
 }
 .map-container {
   border-color: #e2e2e2;
@@ -57,7 +71,8 @@ textarea {
   border-bottom: 1px solid #eee;
 }
 .btn {
-  font-family: 'kyeongpil', kyeongpil;
+/*font-family: 'Nanum Pen Script',*/
+/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
 }
 .panel {
@@ -81,9 +96,10 @@ textarea {
   padding-right: 0;
 }
 .navbar-brand {
-  font-family: 'kyeongpil', kyeongpil;
+/*font-family: 'Nanum Pen Script',*/
+/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
-  font-size: 25px;
+  font-size: 25.5px;
   letter-spacing: 1.5px;
   line-height: 0.8em;
   margin-top: 0px;
@@ -94,9 +110,23 @@ textarea {
   animation-name: fadeInDown;
   animation-duration: 0.5s;
 }
+/*
 .fade-down-leave-active {
   animation-name: fadeOutDown;
   animation-duration: 0.4s;
+}
+*/
+/*
+@keyframes fadeOutDown {
+  from {  opacity: 1; transform: none; }
+  to { opacity: 0.05; transform: translate3d(0, -25px, 0); }
+}
+*/
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+.fade-enter {
+  opacity: 0;
 }
 @-moz-keyframes fadeInDown {
   from {
@@ -136,45 +166,5 @@ textarea {
   to {
     opacity: 1;
     transform: none;
-  }
-}
-@-moz-keyframes fadeOutDown {
-  from {
-    opacity: 1;
-    transform: none;
-  }
-  to {
-    opacity: 0.05;
-    transform: translate3d(0, -25px, 0);
-  }
-}
-@-webkit-keyframes fadeOutDown {
-  from {
-    opacity: 1;
-    transform: none;
-  }
-  to {
-    opacity: 0.05;
-    transform: translate3d(0, -25px, 0);
-  }
-}
-@-o-keyframes fadeOutDown {
-  from {
-    opacity: 1;
-    transform: none;
-  }
-  to {
-    opacity: 0.05;
-    transform: translate3d(0, -25px, 0);
-  }
-}
-@keyframes fadeOutDown {
-  from {
-    opacity: 1;
-    transform: none;
-  }
-  to {
-    opacity: 0.05;
-    transform: translate3d(0, -25px, 0);
   }
 }

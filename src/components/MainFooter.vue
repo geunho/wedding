@@ -11,40 +11,23 @@
   export default {
     name: 'Footer',
 
-    components: {
-
-    },
-
-    data () {
-      return {
-      }
-    },
-
-    created () {
-      // 사진과 컨텐츠 API 호출 하도록 변경
-      /*
-       this.$http.get('http://localhost:8090/api/feeds').then(response => {
-       this.feeds = response.data
-       })
-       */
-    },
-
     methods: {
       // Scroll to top without jquery: http://stackoverflow.com/a/24559613/2853187
       scrollToTop: function () {
-        const scrollDuration = 200
-        var cosParameter = window.scrollY / 2
+        const scrollDuration = 300
+        var scrollHeight = window.scrollY
+        var scrollStep = Math.PI / (scrollDuration / 15)
+        var cosParameter = scrollHeight / 2;
         var scrollCount = 0
-        var oldTimestamp = performance.now()
-        function step (newTimestamp) {
-          scrollCount += Math.PI / (scrollDuration / (newTimestamp - oldTimestamp))
-          if (scrollCount >= Math.PI) window.scrollTo(0, 0)
-          if (window.scrollY === 0) return
-          window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)))
-          oldTimestamp = newTimestamp
-          window.requestAnimationFrame(step)
-        }
-        window.requestAnimationFrame(step)
+        var scrollMargin
+        var scrollInterval = setInterval(function () {
+          if (window.scrollY != 0) {
+            scrollCount = scrollCount + 1
+            scrollMargin = cosParameter - cosParameter * Math.cos(scrollCount * scrollStep)
+            window.scrollTo(0, (scrollHeight - scrollMargin))
+          }
+          else clearInterval(scrollInterval)
+        }, 15)
       }
     }
   }

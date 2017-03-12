@@ -1,15 +1,13 @@
 <template>
-<img v-lazy="imageUrl" />
+  <img class="img-responsive photo" v-bind:src="imageUrl" />
 </template>
 
 <script>
   export default {
     name: 'Photo',
 
-    data () {
-      return {
-        imageUrl: ''
-      }
+    props: {
+      imageUrl: ''
     },
 
     methods: {
@@ -18,15 +16,10 @@
 </script>
 
 <style lang="stylus">
-  @import "../variables";
+@import "../variables";
 
-  img[lazy=loading] {
+img.photo {
+  margin-bottom: 10px
+}
 
-  }
-  img[lazy=error] {
-
-  }
-  img[lazy=loaded] {
-
-  }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="panel panel-default">
-    <div class="panel-body">
+    <div class="attendee panel-body">
       <h5><b>{{ attendee.name }}</b></h5>
       <p>등록일: {{ attendee.regDate }}</p>
       <p>어디로: {{ attendee.where }}</p>
@@ -22,7 +22,7 @@
 <style lang="stylus">
 @import "../variables";
 
-.panel-body {
+.attendee {
   font-size: 12px
   padding: 5px 5px 5px 15px
 }

@@ -1,7 +1,9 @@
 <template>
 <div class="row">
   <div class="col-xs-12">
-
+    <Photo v-for="imageUrl in photos"
+           :imageUrl="baseUrl + imageUrl">
+    </Photo>
   </div>
 </div>
 </template>
@@ -17,16 +19,15 @@ export default {
 
   data () {
     return {
+      baseUrl: 'http://geunho-mikyeong.com/images/',
+      photos: []
     }
   },
 
   created () {
-    // 사진 주소를 반환하는 API 호출
-    /*
-     this.$http.get('http://localhost:8090/api/stories').then(response => {
-     this.feeds = response.data
-     })
-     */
+    this.$http.get('http://geunho-mikyeong.com/api/photos').then(response => {
+      this.photos = response.data
+    })
   }
 }
 </script>

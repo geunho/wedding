@@ -5,53 +5,62 @@
       <h4 class="page-header">초대합니다.</h4>
 
       <!-- 메인 이미지! -->
-      <img src="../assets/main_us.jpeg" class="img-responsive img-rounded">
-
-      <blockquote>
-        <p>서로의 이름을 부르는 것만으로도</p>
-        <p>사랑의 깊이를 확인할 수 있는 두 사람이</p>
-        <p>꽃과 나무처럼 걸어와서</p>
-        <p>서로의 모든 것이 되기 위해</p>
-        <p>오랜 기다림 끝에 혼례식을 치르는 날</p>
-        <p>세상은 더욱 아름다워라</p>
-        <footer><cite title="이헤인">이헤인</cite>, '사랑의 사람들이여' 중에서</footer>
-      </blockquote>
+      <img src="../assets/main_us.jpeg" class="img-responsive">
 
       <div class="text-center">
-        <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-      </div>
-      <br>
-      <div class="text-center">
-        <p>장남 근호</p>
-        <p>장녀 미경</p>
-      </div>
-      <br>
-      <div class="text-center">
-        <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-      </div>
-      <br>
-      <br>
-      <div>
-        <h4><b>피로연</b></h4>
-        <p>2017년 4월 29일 저녁 6시</p>
-        <p>
-          전라남도 순천시 오천동 순천만길 71
+        <blockquote class="text-center">
+          <p>얼굴 하나야</p>
+          <p>손바닥 둘로</p>
+          <p>푹 가리지만</p>
           <br>
-          순천 더 헤윰
-          <a class="loc-link" :href="'/location#suncheon'">
+          <p>보고픈 마음</p>
+          <p>호수만하니</p>
+          <p>눈감을 밖에</p>
+          <footer><cite title="정지용">정지용</cite>, &lt;호수&gt;</footer>
+        </blockquote>
+        <p>매일 보고픈 사람과 결혼합니다.</p>
+      </div>
+      <br>
+      <div class="text-center">
+        <!--span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span-->
+        <img src="../assets/flower.png" class="img-icon">
+      </div>
+      <br>
+      <div class="text-center">
+        <p>김갑일 ∙ 염호남의 장남 근호</p>
+        <p>신원철 ∙ 김정순의 장녀 미경</p>
+      </div>
+      <br>
+
+      <br><!--hr-->
+      <div class="text-center">
+        <!--span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span-->
+        <img src="../assets/cake.png" class="img-icon">
+      </div>
+
+      <div class="text-center">
+        <h4><b>결혼식</b></h4>
+        <h4>2017년 5월 14일 아침 10시 30분</h4>
+        <p>
+          라마다 프라자 호텔, 8층 탐라홀
+          <a class="loc-link" :href="'/location#jeju'">
             <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><span class="map-link">지도보기</span>
           </a>
         </p>
       </div>
-      <br>
-      <div>
-        <h4><b>결혼식</b></h4>
-        <p>2017 5월 14일 아침 10시 30분</p>
+
+      <br><!--hr-->
+      <div class="text-center">
+        <!--span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span-->
+        <img src="../assets/cutain.png" class="img-icon">
+      </div>
+
+      <div class="text-center">
+        <h4><b>피로연</b></h4>
+        <h4>2017년 4월 29일 저녁 6시</h4>
         <p>
-          제주특별자치도 제주시 삼도2동 1255
-          <br>
-          라마다 프라자 호텔, 8층 탐라홀
-          <a class="loc-link" :href="'/location#jeju'">
+          순천 더 헤윰
+          <a class="loc-link" :href="'/location#suncheon'">
             <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><span class="map-link">지도보기</span>
           </a>
         </p>
@@ -91,12 +100,16 @@
 @import "../variables";
 
 a.loc-link {
-  color: $text-color
+  /*color: $text-color*/
 }
 
 span.map-link {
   font-size: 13px
-  border-color: $border-color
   font-weight: bold
+}
+
+img.img-icon {
+  height: 25px
+  width: 25px
 }
 </style>

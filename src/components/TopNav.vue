@@ -3,11 +3,11 @@
   <div class="container">
     <div>
       <ul class="nav navbar-nav navbar-left">
-       <li><a class="navbar-brand" :href="'/invite'">05<br>14</a></li>
-       <li><a class="navbar-list" :href="'/aboutus'">근호&미경</a></li>
-       <li><a class="navbar-list" :href="'/photos'">사진</a></li>
-       <li><a class="navbar-list" :href="'/location'">장소</a></li>
-       <li><a class="navbar-list" :href="'/attendance'">참석</a></li>
+       <li><router-link to="/invite" class="navbar-brand">05<br>14</a></router-link></li>
+       <li><router-link to="/aboutus" class="navbar-list">근호&미경</router-link></li>
+       <li><router-link to="/photos" class="navbar-list">사진</router-link></li>
+       <li><router-link to="/location" class="navbar-list">장소</router-link></li>
+       <li><router-link to="/attendance" class="navbar-list">참석</router-link></li>
      </ul>
     </div>
   </div>
@@ -42,6 +42,10 @@
 <style lang="stylus">
 @import "../variables";
 
+a.router-link-active {
+  color: #333 !important;
+  /*color: rgb(190, 60, 60) !important;*/
+}
 
 .navbar {
   /*position: relative; */
@@ -62,10 +66,12 @@
   letter-spacing: 1.15px;
   font-size: 15.5px;
   padding: 15px 6px !important;
+  /*color: rgb(232, 132, 112)*/
 }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: #fff
+  /*background-color: rgb(255, 235, 225)*/
 }
 
 .navbar-collapse.collapse {

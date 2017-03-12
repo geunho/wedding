@@ -26,11 +26,18 @@ const router = new Router({
     { path: '/attendancelist', component: AttendanceList },
     { path: '*', redirect: '/invite'}
   ],
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) {
-      return { selector: to.hash };
+      return {
+        selector: to.hash
+      }
     }
-  }
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return {x: 0, y: 0}
+    }
+  },
 })
 
 var app = new Vue({
@@ -39,3 +46,7 @@ var app = new Vue({
 })
 
 app.$mount('#app')
+
+// load assets
+function requireAll(r) { r.keys().forEach(r); }
+requireAll(require.context('src/assets/photos/', true));

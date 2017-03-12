@@ -1,6 +1,7 @@
 <template>
   <div>
     <modal v-if="isSubmitted" @close="isSubmitted = false" :_name="name" :_where="where"></modal>
+
     <div class="row">
       <div class="col-xs-12">
         <h4 class="page-header">참석 여부</h4>
@@ -10,7 +11,9 @@
         </div>
       </div>
     </div>
+
     <br>
+
     <div class="row">
       <div class="col-xs-7 form-container">
         <form>
@@ -27,7 +30,8 @@
               <input v-model="where" type="radio" name="where" id="optionJeju" value="제주도 결혼식"> 제주도 결혼식
             </label>
           </div>
-          <div class="radio">
+          <transition name="fade">
+          <div class="radio" v-if="where === '제주도 결혼식'">
             <h5><b>제주도로 오시면 언제 오시나요?</b></h5>
             <label>
               <input v-model="when" type="radio" name="when" id="optionYesterday" value="하루 혹은 그 전날"> 하루 혹은 그 전날
@@ -36,6 +40,7 @@
               <input v-model="when" type="radio" name="when" id="optionToday" value="당일"> 당일
             </label>
           </div>
+          </transition>
           <div type="submit" class="btn btn-default" v-on:click="submit()">확인</div>
         </form>
       </div>
@@ -44,7 +49,7 @@
 </template>
 
 <script>
-import Modal from './SuccessModal'
+import Modal from './AttendanceModal'
 
 export default {
   name: 'Attendance',
@@ -73,6 +78,7 @@ export default {
 
   methods: {
     submit: function () {
+      this.isSubmitted = true
       if (this.name != '' && this.where != '') {
         this.$http.post('http://geunho-mikyeong.com/api/attendance', {
           name: this.name,
@@ -97,12 +103,7 @@ div.radio {
 
 div.form-container {
   margin-left: 45px
-  color: #707070
-}
-.page-body {
-  margin-left: 10px
-  font-size: 13.5px
-  color: #4f4f4f
+  /*color: #707070*/
 }
 
 </style>
