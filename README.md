@@ -1,7 +1,7 @@
 # wd-geunho-and-mikyeong
 
 Geunho and Mikyeong's Wedding Invitation
-
+http://geunho-mikyeong.com/invite
 
 ## Build
 
