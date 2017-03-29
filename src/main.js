@@ -13,7 +13,13 @@ import AttendanceList from './components/AttendeeList'
 
 Vue.use(Router)
 Vue.use(Resource)
-Vue.use(LazyLoad)
+Vue.use(LazyLoad, {
+  preload: 2.0,
+  error: false,
+  loading: false,
+  attempt: 3,
+  listenerEvents: ['scroll', 'resize', 'touchend', 'touchmove']
+})
 
 const router = new Router({
   mode: 'history',

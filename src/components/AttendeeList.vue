@@ -4,6 +4,7 @@
     <h4 class="page-header">참석자 명단</h4>
     <attendee
         v-for="attendee in attendees"
+        :key="attendee.regDate"
         :attendee="attendee">
     </attendee>
   </div>

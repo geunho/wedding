@@ -1,5 +1,5 @@
 <template>
-  <img class="img-responsive photo" v-bind:src="imageUrl" />
+  <img class="img-responsive photo" v-lazy="imageUrl" />
 </template>
 
 <script>
@@ -20,6 +20,11 @@
 
 img.photo {
   margin-bottom: 10px
+}
+
+img[lazy=loading] {
+  width: 40px!important;
+  margin: auto;
 }
 
 </style>
