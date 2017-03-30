@@ -4,13 +4,13 @@
       <h4 class="page-header">오시는 길</h4>
 
       <div id="jeju" class="location-header">
-        <h4><b>제주 결혼식 장소</b></h4>
+        <h4>제주 결혼식 장소</h4>
       </div>
       <div class="map-container" id="map-jeju"></div>
       <div class="location-body">
-        <p>라마다 프라자 호텔, 8층 탐라홀</p>
+        <p>라마다 프라자 제주호텔, 8층 탐라홀</p>
         <p class="p-inner">
-          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 제주특별자치도 제주시 삼도2동 1255
+          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 제주특별자치도 제주시 탑동로 66
         </p>
         <p class="p-inner">
           <a href="tel:0647298100" class="loc-link">
@@ -30,13 +30,13 @@
       <br><br>
 
       <div id="suncheon" class="location-header">
-        <h4><b>순천 피로연 장소</b></h4>
+        <h4>순천 피로연 장소</h4>
       </div>
       <div class="map-container" id="map-suncheon"></div>
       <div class="location-body">
-        <p>순천 더 헤윰</p>
+        <p>순천 더헤윰, 1층 컨벤션홀</p>
         <p class="p-inner">
-          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 전라남도 순천시 오천동 순천만길 71
+          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 전라남도 순천시 순천만길 79
         </p>
         <p class="p-inner">
           <a href="tel:0617453636" class="loc-link">

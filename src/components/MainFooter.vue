@@ -47,7 +47,7 @@ span.top-button {
 
 .container-footer {
   height: 70px
-  font-size: 11px
+  font-size: 14px
   background-color: #fafafa
   margin-top: 30px
 }

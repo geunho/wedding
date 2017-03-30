@@ -9,10 +9,10 @@
             <h5><strong>2017년 5월 14일, 우리 결혼해요</strong></h5>
           </div>
           <div class="panel-image">
-            <img src="../assets/photos/IMG_5054.jpg" class="img-responsive">
+            <img src="../assets/photos/IMG_ABOUT_01.jpeg" class="img-responsive">
           </div>
           <div class="panel-body">
-            <p>근호와 미경이가 2017년 꽃 피는 5월에 제주도에서 결혼 합니다.</p>
+            <p>근호와 미경이가 2017년 꽃 피는 5월에 제주도에서 결혼합니다.</p>
           </div>
         </div>
 
@@ -21,7 +21,7 @@
             <h5><strong>2017년 4월 29일, 우리 피로연해요</strong></h5>
           </div>
           <div class="panel-image">
-            <img src="../assets/photos/IMG_5157.jpg" class="img-responsive">
+            <img src="../assets/photos/IMG_ABOUT_02.jpeg" class="img-responsive">
           </div>
           <div class="panel-body">
             <p>결혼식을 올리기 전, 순천에서 피로연을 합니다.</p>
@@ -33,22 +33,10 @@
             <h5><strong>2015년 10월, 우리 처음 만났어요</strong></h5>
           </div>
           <div class="panel-image">
-            <img src="../assets/photos/IMG_5581.jpg" class="img-responsive">
+            <img src="../assets/photos/IMG_ABOUT_03.jpeg" class="img-responsive">
           </div>
           <div class="panel-body">
-            <p>한 눈에 사랑에 빠졌죠.</p>
-          </div>
-        </div>
-
-        <div class="panel panel-default mikyeong">
-          <div class="panel-heading">
-            <h5><strong>2015년 4월, 미경 독립하다</strong></h5>
-          </div>
-          <div class="panel-image">
-            <img src="../assets/photos/IMG_5677.jpg" class="img-responsive">
-          </div>
-          <div class="panel-body">
-            <p>서울에서 자리 잡았어요</p>
+            <p>한 눈에 사랑에 빠졌죠. #운동#재즈#맥주</p>
           </div>
         </div>
 
@@ -57,34 +45,47 @@
             <h5><strong>2013년 12월, 근호 독립하다</strong></h5>
           </div>
           <div class="panel-image">
-            <img src="../assets/photos/IMG_5157.jpg" class="img-responsive">
+            <img src="../assets/photos/IMG_ABOUT_04.jpeg" class="img-responsive">
           </div>
           <div class="panel-body">
-            <p>서울 사람이 된 것 같아요</p>
-          </div>
-        </div>
-
-        <div class="panel panel-default geunho">
-          <div class="panel-heading">
-            <h5><strong>1989년 1월 27일, 근호 태어나다</strong></h5>
-          </div>
-          <div class="panel-image">
-            <img src="../assets/photos/IMG_5157.jpg" class="img-responsive">
-          </div>
-          <div class="panel-body">
-            <p>근호가 태어났어요 (미경 10개월)</p>
+            <p>개발자로서의 커리어를 시작했어요. 그리고 미경이를 소개해 준 친구를 만나게 되었죠.</p>
           </div>
         </div>
 
         <div class="panel panel-default mikyeong">
           <div class="panel-heading">
-            <h5><strong>1988년 9월 7일, 미경 태어나다</strong></h5>
+            <h5><strong>2012년 1월, 미경 새로운 꿈을 꾸다</strong></h5>
           </div>
           <div class="panel-image">
-            <img src="../assets/photos/IMG_5157.jpg" class="img-responsive">
+            <img src="../assets/photos/IMG_ABOUT_05.jpeg" class="img-responsive">
           </div>
           <div class="panel-body">
-            <p>미경이가 세상에 나왔어요</p>
+            <p>중국어 통번역을 공부하기 시작했어요. 그리고 근호를 만나게 해준 친구를 만나게 되었죠.</p>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default geunho">
+          <div class="panel-heading">
+            <h5><strong>1989년 1월, 근호 태어나다</strong></h5>
+          </div>
+          <div class="panel-image">
+            <img src="../assets/photos/IMG_ABOUT_06.jpeg" class="img-responsive">
+          </div>
+          <div class="panel-body">
+            <p>#순천#코딩을합시다#제대후운동매니아#피아노#가끔게임덕후#재즈좋아요</p>
+          </div>
+        </div>
+
+        <div class="panel panel-default mikyeong">
+          <div class="panel-heading">
+            <h5><strong>1988년 9월, 미경 태어나다</strong></h5>
+          </div>
+          <div class="panel-image">
+            <img src="../assets/photos/IMG_ABOUT_07.jpeg" class="img-responsive">
+          </div>
+          <div class="panel-body">
+            <p>#제주도#중국어로밥벌기#간헐적운동매니아#코바늘뜨개질#항상게임덕후#재즈좋아요</p>
           </div>
         </div>
       </div>

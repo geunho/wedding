@@ -7,7 +7,7 @@
         <h4 class="page-header">참석 여부</h4>
         <div class="page-body">
           <p>편안한 자리와 맛있는 식사를 준비하기 위해,</p>
-          <p>참석 여부를 등록 부탁 드립니다.</p>
+          <p>참석 여부를 등록해주세요.</p>
         </div>
       </div>
     </div>
@@ -34,10 +34,10 @@
           <div class="radio" v-if="where === '제주도 결혼식'">
             <h5><b>제주도로 오시면 언제 오시나요?</b></h5>
             <label>
-              <input v-model="when" type="radio" name="when" id="optionYesterday" value="하루 혹은 그 전날"> 하루 혹은 그 전날
+              <input v-model="when" type="radio" name="when" id="optionYesterday" value="하루 혹은 그 전날"> 5월 13일 이전
             </label>
             <label>
-              <input v-model="when" type="radio" name="when" id="optionToday" value="당일"> 당일
+              <input v-model="when" type="radio" name="when" id="optionToday" value="당일"> 5월 14일
             </label>
           </div>
           </transition>

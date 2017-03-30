@@ -44,7 +44,5 @@ img[lazy=loading] {
   width: 40px!important;
   margin: auto;
 }
-
+/*-webkit-transform: translate3d(0,0,0)*/
 </style>
-
--webkit-transform: translate3d(0,0,0)
