@@ -28,7 +28,7 @@ export default {
   },
 
   created () {
-    this.$http.get('http://geunho-mikyeong.com/api/attendees').then(response => {
+    this.$http.get('/api/attendees').then(response => {
       this.attendees = response.data
     })
   },

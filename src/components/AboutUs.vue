@@ -3,6 +3,7 @@
     <div class="col-xs-12">
       <h4 class="page-header">근호 & 미경</h4>
 
+      <span class="glyphicon glyphicon-heart timeline-heart" aria-hidden="true"></span>
       <div class="timeline">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -98,18 +99,6 @@
   export default {
     name: 'AboutUs',
 
-//    components: {
-//
-//    },
-
-    data () {
-      return {
-        title: '',
-        content: '',
-        projects: [],
-        feeds: []
-      }
-    }
 //    created () {
 //      // 컨텐츠 API 호출로 반복 구성할 것. 1) 함꼐하는 시간 Vue, 2) 근호 시간 Vue, 3) 미경 시간 Vue
 //      /*
@@ -121,7 +110,12 @@
   }
 </script>
 
-<style>
+<style lang="stylus">
+@import "../variables";
+
+.timeline {
+  padding-top: 20px;
+}
 .timeline:before {
     content: '';
     position: absolute;
@@ -131,6 +125,18 @@
     left: 50%;
     margin-left: -0.25em;
     background: #f2c63d;
+}
+
+.timeline-heart {
+  font-size: 1.8em;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  z-index: -1;
+  top: 1.5em;
+  left: -0.0417em;
+  width: 100%;
+  text-align: center;
+  color: $special-color
 }
 
 .timeline > .panel {

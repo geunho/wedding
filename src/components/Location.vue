@@ -134,17 +134,8 @@
 <style lang="stylus">
 @import "../variables";
 
-a.loc-link {
-  color: $text-color
-}
-
 p.p-inner {
   padding-left: 10px
-}
-
-span.map-link {
-  font-size: 13px
-  color: $link-color
 }
 
 .location-header {

@@ -80,7 +80,7 @@ export default {
     submit: function () {
       this.isSubmitted = true
       if (this.name != '' && this.where != '') {
-        this.$http.post('http://geunho-mikyeong.com/api/attendance', {
+        this.$http.post('/api/attendance', {
           name: this.name,
           where: this.where,
           when: this.when

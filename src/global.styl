@@ -1,20 +1,11 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css'
 @import './variables.styl'
 
-/*
-@font-face {
-  font-family: 'kyeongpil';
-  src: url("assets/DXKPMB-KSCpc-EUC-H.ttf") format('truetype');
-}
-*/
-
-/* Tags */
-
+// Tags
+///////////////////////////////////////////////////////////////
 body {
   color: $text-color
   background: #fff
-  /*font-family: 'Nanum Pen Script',*/
-  /*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300
   font-size: 16.0px
   padding-top: 90px
@@ -29,8 +20,6 @@ h2,
 h3,
 h4,
 h5 {
-  /*font-family: 'Nanum Pen Script',*/
-  /*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300
 }
 
@@ -46,8 +35,9 @@ input[type="text"], textarea {
   font-size:16px
 }
 
-/* Classes */
 
+// Classes
+///////////////////////////////////////////////////////////////
 .col-xs-12 {
   padding-right: 0px
   padding-left: 0px
@@ -55,6 +45,8 @@ input[type="text"], textarea {
 
 .page-header {
   margin-top: 0
+  margin-left: 10px
+  margin-right: 20px
   border-color: $border-color
   color: #aaa
   padding-right: 15px
@@ -90,8 +82,6 @@ input[type="text"], textarea {
 }
 
 .btn {
-  /*font-family: 'Nanum Pen Script',*/
-  /*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300
 }
 
@@ -119,8 +109,6 @@ input[type="text"], textarea {
 }
 
 .navbar-brand {
-  /*font-family: 'Nanum Pen Script',*/
-  /*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300
   font-size: 25.5px
   letter-spacing: 1.5px
@@ -129,8 +117,10 @@ input[type="text"], textarea {
   top: -5px
 }
   
-/* Animations */
+// Animations
+///////////////////////////////////////////////////////////////
 
+// Tab Animations
 .fade-down-enter-active {
   animation-name: fadeInDown;
   animation-duration: 0.5s;
@@ -148,12 +138,7 @@ input[type="text"], textarea {
   to { opacity: 1; transform: none; }
 }
 
-/*
-@keyframes fadeOutDown {
-  from {  opacity: 1; transform: none; }
-  to { opacity: 0.05; transform: translate3d(0, -25px, 0); }
-}
-*/
+
 
 .fade-enter-active {
   transition: opacity .5s
@@ -161,4 +146,19 @@ input[type="text"], textarea {
 
 .fade-enter {
   opacity: 0
+}
+
+// Modal Anination
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

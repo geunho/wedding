@@ -1,12 +1,11 @@
 <template>
   <div>
-    <PhotoCarousel v-if="isCarouselOpened" @close="isCarouselOpened = false" :_photos="photos"></PhotoCarousel>
-
+    <PhotoDetail v-if="isDetailOpened" @close="isDetailOpened = false" :_imageUrl="selectedImage"></PhotoDetail>
     <div class="row">
       <div class="col-xs-12">
         <div v-for="imageUrl in photos"
              :key="imageUrl">
-          <img class="img-responsive photo" v-lazy="baseUrl + imageUrl" >
+          <img class="img-responsive photo" v-lazy="baseUrl + imageUrl" v-on:click="openDetail(imageUrl)">
         </div>
       </div>
     </div>
@@ -14,34 +13,34 @@
 </template>
 
 <script>
-import Photo from './Photo'
-import PhotoCarousel from './PhotoCarousel'
+import PhotoDetail from './PhotoDetail'
 
 export default {
   name: 'Photos',
 
   components: {
-    Photo,
-    PhotoCarousel
+    PhotoDetail
   },
 
   data () {
     return {
       baseUrl: '/static/',
       photos: [],
-      isCarouselOpened: false
+      isDetailOpened: false,
+      selectedImage: ''
     }
   },
 
   created () {
-    this.$http.get('http://geunho-mikyeong.com/api/photos').then(response => {
+    this.$http.get('/api/photos').then(response => {
       this.photos = response.data
     })
   },
 
-  method: {
-    openCarousel: function () {
-      this.isCarouselOpened = true
+  methods: {
+    openDetail: function (imageUrl) {
+      this.isDetailOpened = true
+      this.selectedImage = imageUrl
     }
   }
 }

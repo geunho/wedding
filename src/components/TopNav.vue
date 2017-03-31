@@ -44,14 +44,18 @@
 
 a.router-link-active {
   color: #333 !important;
-  /*color: rgb(190, 60, 60) !important;*/
+}
+
+a.navbar-list.router-link-active {
+  border-bottom: 2px solid #f2c63d;
+  padding-bottom: 1px;
 }
 
 .navbar {
-  /*position: relative; */
   height: 67.5px;
   margin-bottom: 20px;
   border-color: $border-color;
+  -webkit-box-shadow: 0px 0px;
 }
 
 .navbar-nav {
@@ -65,13 +69,12 @@ a.router-link-active {
 .nav>li>a.navbar-list {
   letter-spacing: 1.15px;
   font-size: 15.5px;
-  padding: 15px 6px !important;
-  /*color: rgb(232, 132, 112)*/
+  padding: 15px 6px 3px 6px!important;
+  font-weight: 400;
 }
 
 .navbar-default {
-  background-color: #fff
-  /*background-color: rgb(255, 235, 225)*/
+  background-color: rgba(255,255,255,0.95)
 }
 
 .navbar-collapse.collapse {

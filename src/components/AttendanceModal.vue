@@ -1,16 +1,15 @@
 <template>
   <transition name="modal">
-    <div class="modal-mask">
-      <div class="modal-wrapper" @click="$emit('close')">
-        <div class="modal-container">
-
-          <div class="modal-header">
+    <div class="attendance-modal-mask">
+      <div class="attendance-modal-wrapper" @click="$emit('close')">
+        <div class="attendance-modal-container">
+          <div class="attendance-modal-header">
             <slot name="header">
               <h4>감사합니다!</h4>
             </slot>
           </div>
 
-          <div class="modal-body">
+          <div class="attendance modal-body">
             <slot name="body">
               <p>{{ name }}님, {{ where }}장에서 뵙겠습니다 :-)</p>
             </slot>
@@ -44,7 +43,7 @@
 <style lang="stylus">
 @import "../variables";
 
-.modal-mask {
+.attendance-modal-mask {
   position: fixed;
   z-index: 9998;
   top: 0;
@@ -56,12 +55,12 @@
   transition: opacity .3s ease;
 }
 
-.modal-wrapper {
+.attendance-modal-wrapper {
   display: table-cell;
   vertical-align: middle;
 }
 
-.modal-container {
+.attendance-modal-container {
   width: 270px;
   margin: 0px auto;
   padding: 10px 10px;
@@ -71,7 +70,7 @@
   transition: all .3s ease;
 }
 
-.modal-header {
+.attendance-modal-header {
   margin-top: 0;
   font-weight: bold
   padding: 0 5px 0 5px
@@ -79,20 +78,6 @@
 
 .modal-body {
   margin: 20px 0;
-}
-
-.modal-enter {
-  opacity: 0;
-}
-
-.modal-leave-active {
-  opacity: 0;
-}
-
-.modal-enter .modal-container,
-.modal-leave-active .modal-container {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 </style>

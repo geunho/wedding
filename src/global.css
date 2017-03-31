@@ -1,16 +1,7 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
-/*
-@font-face {
-  font-family: 'kyeongpil';
-  src: url("assets/DXKPMB-KSCpc-EUC-H.ttf") format('truetype');
-}
-*/
-/* Tags */
 body {
   color: #333;
   background: #fff;
-/*font-family: 'Nanum Pen Script',*/
-/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
   font-size: 16px;
   padding-top: 90px;
@@ -23,8 +14,6 @@ h2,
 h3,
 h4,
 h5 {
-/*font-family: 'Nanum Pen Script',*/
-/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
 }
 blockquote {
@@ -38,13 +27,14 @@ textarea {
   box-shadow: none !important;
   font-size: 16px;
 }
-/* Classes */
 .col-xs-12 {
   padding-right: 0px;
   padding-left: 0px;
 }
 .page-header {
   margin-top: 0;
+  margin-left: 10px;
+  margin-right: 20px;
   border-color: #e2e2e2;
   color: #aaa;
   padding-right: 15px;
@@ -71,8 +61,6 @@ textarea {
   border-bottom: 1px solid #eee;
 }
 .btn {
-/*font-family: 'Nanum Pen Script',*/
-/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
 }
 .panel {
@@ -96,8 +84,6 @@ textarea {
   padding-right: 0;
 }
 .navbar-brand {
-/*font-family: 'Nanum Pen Script',*/
-/*font-family: 'kyeongpil', kyeongpil*/
   font-weight: 300;
   font-size: 25.5px;
   letter-spacing: 1.5px;
@@ -105,7 +91,6 @@ textarea {
   margin-top: 0px;
   top: -5px;
 }
-/* Animations */
 .fade-down-enter-active {
   animation-name: fadeInDown;
   animation-duration: 0.5s;
@@ -116,17 +101,22 @@ textarea {
   animation-duration: 0.4s;
 }
 */
-/*
-@keyframes fadeOutDown {
-  from {  opacity: 1; transform: none; }
-  to { opacity: 0.05; transform: translate3d(0, -25px, 0); }
-}
-*/
 .fade-enter-active {
   transition: opacity 0.5s;
 }
 .fade-enter {
   opacity: 0;
+}
+.modal-enter {
+  opacity: 0;
+}
+.modal-leave-active {
+  opacity: 0;
+}
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 @-moz-keyframes fadeInDown {
   from {

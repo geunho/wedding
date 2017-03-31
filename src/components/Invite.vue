@@ -23,19 +23,17 @@
       </div>
       <br>
       <div class="text-center">
-        <!--span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span-->
         <img src="../assets/flower.png" class="img-icon">
       </div>
       <br>
       <div class="text-center">
-        <p>김갑일 ∙ 염호남의 장남 김근호</p>
-        <p>신원철 ∙ 김정순의 장녀 신미경</p>
+        <p><span class="name">김갑일 ∙ 염호남</span>의 장남 <span class="name">김근호</span></p>
+        <p><span class="name">신원철 ∙ 김정순</span>의 장녀 <span class="name">신미경</span></p>
       </div>
       <br>
 
-      <br><!--hr-->
+      <br>
       <div class="text-center">
-        <!--span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span-->
         <img src="../assets/cake.png" class="img-icon">
       </div>
 
@@ -73,26 +71,8 @@
 
 <script>
   export default {
-    name: 'Invite',
+    name: 'Invite'
 
-    components: {
-
-    },
-
-    data () {
-      return {
-        title: ''
-      }
-    },
-
-    created () {
-      // 사진과 컨텐츠 API 호출 하도록 변경
-      /*
-       this.$http.get('http://localhost:8090/api/feeds').then(response => {
-       this.feeds = response.data
-       })
-       */
-    }
   }
 </script>
 
@@ -100,12 +80,18 @@
 @import "../variables";
 
 a.loc-link {
-  /*color: $text-color*/
+  color: $text-color
 }
 
 span.map-link {
   font-size: 13px
   font-weight: bold
+  color: $link-color
+}
+
+span.name {
+  font-size: 1.2em
+  letter-spacing: 2px
 }
 
 img.img-icon {
