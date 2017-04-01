@@ -43,7 +43,11 @@
 @import "../variables";
 
 a.router-link-active {
-  color: #333 !important;
+  color: #333;
+}
+
+a.navbar-brand.router-link-active {
+  color: $special-color;
 }
 
 a.navbar-list.router-link-active {
@@ -55,7 +59,7 @@ a.navbar-list.router-link-active {
   height: 67.5px;
   margin-bottom: 20px;
   border-color: $border-color;
-  -webkit-box-shadow: 0px 0px;
+  box-shadow: 0px 1px 1px rgba(0,0,0, 0.10);
 }
 
 .navbar-nav {

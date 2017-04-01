@@ -39,8 +39,10 @@ export default {
 
   methods: {
     openDetail: function (imageUrl) {
+      /*
       this.isDetailOpened = true
       this.selectedImage = imageUrl
+      */
     }
   }
 }
@@ -50,7 +52,8 @@ export default {
 @import "../variables";
 
 img.photo {
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 img[lazy=loading] {

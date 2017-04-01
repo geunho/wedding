@@ -95,12 +95,6 @@ textarea {
   animation-name: fadeInDown;
   animation-duration: 0.5s;
 }
-/*
-.fade-down-leave-active {
-  animation-name: fadeOutDown;
-  animation-duration: 0.4s;
-}
-*/
 .fade-enter-active {
   transition: opacity 0.5s;
 }

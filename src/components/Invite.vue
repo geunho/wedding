@@ -5,7 +5,7 @@
       <h4 class="page-header">초대합니다.</h4>
 
       <!-- 메인 이미지! -->
-      <img src="../assets/photos/IMG_MAIN.jpeg" class="img-responsive">
+      <img src="../assets/photos/IMG_MAIN.jpg" class="img-responsive">
 
       <div class="text-center">
         <blockquote class="text-center">
