@@ -1,6 +1,5 @@
 <template>
   <div>
-    <PhotoDetail v-if="isDetailOpened" @close="isDetailOpened = false" :_imageUrl="selectedImage"></PhotoDetail>
     <div class="row">
       <div class="col-xs-12">
         <div v-for="imageUrl in photos"
@@ -9,6 +8,7 @@
         </div>
       </div>
     </div>
+    <!--PhotoDetail v-if="isDetailOpened" @close="closeDetail()" :_imageUrl="selectedImage"></PhotoDetail-->
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
 
   data () {
     return {
-      baseUrl: '/static/',
+      baseUrl: '/images/original/',
       photos: [],
       isDetailOpened: false,
       selectedImage: ''
@@ -43,6 +43,10 @@ export default {
       this.isDetailOpened = true
       this.selectedImage = imageUrl
       */
+    },
+    closeDetail: function () {
+      this.isDetailOpened = false
+      this.selectedImage = ''
     }
   }
 }

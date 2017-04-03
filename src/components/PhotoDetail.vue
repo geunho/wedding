@@ -26,7 +26,7 @@ export default {
 
   data () {
     return {
-      baseUrl: '/static/',
+      baseUrl: '/images/original/',
       imageUrl: this._imageUrl
     }
   }
@@ -43,7 +43,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .65);
+  background-color: rgba(0, 0, 0, .75);
   display: table;
   transition: opacity .3s ease;
 }
@@ -54,10 +54,11 @@ export default {
 }
 
 .photo-modal-container {
-  width: 100%;
+  width: 30em
   margin: 0px auto;
   padding: 10px 0px 10px;
   transition: all .3s ease;
+  overflow-y: scroll;
 }
 
 .photo-modal-header {
@@ -66,9 +67,11 @@ export default {
 .photo-modal-body {
   max-width: 30em
   margin: 0 auto
+
 }
 
 img.photo-modal {
+  max-height: inherit;
 }
 
 </style>

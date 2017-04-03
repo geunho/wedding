@@ -1,11 +1,11 @@
 <template>
 <div id="wrapper">
   <top-nav></top-nav>
-    <div class="container main-container">
-      <transition name="fade-down" mode="out-in" appear>
-        <router-view class="view" keep-alive></router-view>
-      </transition>
-    </div>
+  <div class="container main-container">
+    <transition name="fade-down" mode="out-in" appear>
+      <router-view class="view" keep-alive></router-view>
+    </transition>
+  </div>
   <main-footer></main-footer>
 </div>
 </template>

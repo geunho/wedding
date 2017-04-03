@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.4,user-scalable=yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.4,user-scalable=1">
     <meta property="og:url" content="http://geunho-mikyeong.com">
     <meta property="og:title" content="근호 & 미경">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://geunho-mikyeong.com/static/IMG_MAIN.jpeg">
+    <meta property="og:image" content="http://geunho-mikyeong.com/images/IMG_MAIN.jpeg">
     <meta property="og:description" content="결혼식에 초대합니다.">
     <title>근호 & 미경</title>
     {% for (var css in o.htmlWebpackPlugin.files.css) { %}
@@ -14,7 +14,34 @@
   </head>
   <body>
     <div id="app"></div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
     <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}" async defer></script>{% } %}
+    <script>
+      var lastScrollTop = 0
+      var delta = 5
+      var navbarHeight = $('nav').outerHeight()
+
+      $('body').bind('touchmove', function(e) {
+        var st = $(this).scrollTop()
+
+        // Make sure they scroll more than delta
+        if (Math.abs(lastScrollTop - st) <= delta) {
+          return
+        }
+
+        if (st > lastScrollTop && st > navbarHeight) {
+          // Scroll Down
+          $('nav').removeClass('nav-down').addClass('nav-up')
+        } else {
+          // Scroll Up
+          if (st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down')
+          }
+        }
+
+        lastScrollTop = st
+      });
+    </script>
   </body>
 </html>

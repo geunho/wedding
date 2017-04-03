@@ -54,4 +54,4 @@ app.$mount('#app')
 
 // load assets
 function requireAll(r) { r.keys().forEach(r); }
-requireAll(require.context('src/assets/photos/', true));
+requireAll(require.context('src/assets/images/', true));

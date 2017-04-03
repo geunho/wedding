@@ -5,7 +5,7 @@
       <h4 class="page-header">초대합니다.</h4>
 
       <!-- 메인 이미지! -->
-      <img src="../assets/photos/IMG_MAIN.jpg" class="img-responsive">
+      <img src="../assets/images/IMG_MAIN.jpg" class="img-responsive">
 
       <div class="text-center">
         <blockquote class="text-center">
@@ -55,7 +55,7 @@
       <br>
       <div class="text-center">
         <b>피로연 안내</b>
-        <h4>2017년 4월 29일 저녁 6시</h4>
+        <h4>2017년 4월 29일 오후 6시</h4>
         <p>
           순천 더헤윰, 1층 컨벤션홀
           <a class="loc-link" :href="'/location#suncheon'">

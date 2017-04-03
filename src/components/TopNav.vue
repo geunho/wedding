@@ -14,52 +14,36 @@
 </nav>
 </template>
 
-
 <script>
   export default {
-    name: 'TopNav',
-
-    components: {
-
-    },
-
-    data () {
-      return {
-      }
-    },
-
-    created () {
-      // 사진과 컨텐츠 API 호출 하도록 변경
-      /*
-       this.$http.get('http://localhost:8090/api/feeds').then(response => {
-       this.feeds = response.data
-       })
-       */
-    }
+    name: 'TopNav'
   }
 </script>
 
 <style lang="stylus">
 @import "../variables";
 
-a.router-link-active {
-  color: #333;
-}
-
 a.navbar-brand.router-link-active {
-  color: $special-color;
+  color: #333!important;
 }
 
 a.navbar-list.router-link-active {
-  border-bottom: 2px solid #f2c63d;
+  border-bottom: 2px solid $special-color;
   padding-bottom: 1px;
+  color: #333!important;
+}
+
+/* animation */
+.nav-up {
+  top: -69px;
 }
 
 .navbar {
   height: 67.5px;
   margin-bottom: 20px;
   border-color: $border-color;
-  box-shadow: 0px 1px 1px rgba(0,0,0, 0.10);
+  box-shadow: 0px 0.1px 1px rgba(0,0,0, 0.10);
+  transition: top 0.2s ease-in-out;
 }
 
 .navbar-nav {
