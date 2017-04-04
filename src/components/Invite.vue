@@ -39,33 +39,46 @@
 
       <div class="text-center">
         <h4>2017년 5월 14일 오전 10시 30분</h4>
-        <p>
-          라마다 프라자 제주호텔, 8층 탐라홀
-          <a class="loc-link" :href="'/location#jeju'">
-            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><span class="map-link">지도보기</span>
-          </a>
-        </p>
+        <p>라마다 프라자 제주호텔, 8층 탐라홀</p>
       </div>
 
       <br><hr>
       <div class="text-center">
-        <!--span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span-->
         <img src="../assets/cutain.png" class="img-icon">
       </div>
       <br>
       <div class="text-center">
         <b>피로연 안내</b>
         <h4>2017년 4월 29일 오후 6시</h4>
-        <p>
-          순천 더헤윰, 1층 컨벤션홀
-          <a class="loc-link" :href="'/location#suncheon'">
-            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><span class="map-link">지도보기</span>
-          </a>
-        </p>
+        <p>순천 더헤윰, 1층 컨벤션홀</p>
       </div>
     </div>
 
-    <br><br><br><br>
+    <br><br>
+
+    <div class="col-xs-12">
+      <ul class="list-group text-center">
+
+        <li class="list-group-item">
+          <router-link to="/aboutus" class="bottom-navbar-list">
+            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            근호&미경
+          </router-link>
+        </li>
+        <li class="list-group-item">
+          <router-link to="/photos" class="bottom-navbar-list">
+            <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+            사진 보기
+          </router-link>
+        </li>
+        <li class="list-group-item">
+          <router-link to="/location" class="bottom-navbar-list">
+            <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+            오시는 길
+          </router-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -78,6 +91,10 @@
 
 <style lang="stylus">
 @import "../variables";
+
+blockquote {
+  letter-spacing: 1px
+}
 
 a.loc-link {
   color: $text-color
@@ -97,5 +114,27 @@ span.name {
 img.img-icon {
   height: 25px
   width: 25px
+}
+
+ul.list-group {
+  align-content: center;
+  padding: 60px 20px 10px 20px
+  max-width: 25em;
+  margin: 0 auto;
+}
+
+a.bottom-navbar-list.router-link-active {
+  /*border-bottom: 2px solid $special-color;*/
+  /*padding-bottom: 1px;*/
+  color: #111!important;
+  text-decoration: none;
+}
+
+li.list-group-item > a.bottom-navbar-list {
+  color: #777
+  letter-spacing: 1.15px;
+  font-size: 15.5px;
+  padding: 15px 6px 3px 6px!important;
+  font-weight: 400;
 }
 </style>
