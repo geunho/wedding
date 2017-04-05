@@ -3,15 +3,18 @@
     <div class="attendance-modal-mask">
       <div class="attendance-modal-wrapper" @click="$emit('close')">
         <div class="attendance-modal-container">
-          <div class="attendance-modal-header">
+          <div v-if="this._name != '' && this._where != ''" class="attendance-modal-header">
             <slot name="header">
               <h4>감사합니다!</h4>
             </slot>
           </div>
 
           <div class="attendance modal-body">
-            <slot name="body">
+            <slot v-if="this._name != '' && this._where != ''" name="body">
               <p>{{ name }}님, {{ where }}장에서 뵙겠습니다 :-)</p>
+            </slot>
+            <slot v-else>
+              성함과 장소를 선택해주세요.
             </slot>
           </div>
         </div>

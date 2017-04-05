@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
 import LazyLoad from 'vue-lazyload'
-import VueCarousel from 'vue-carousel';
 import App from './App'
 
 import Invite from './components/Invite'
@@ -14,7 +13,6 @@ import AttendanceList from './components/AttendeeList'
 
 Vue.use(Router)
 Vue.use(Resource)
-Vue.use(VueCarousel)
 Vue.use(LazyLoad, {
   preload: 2.0,
   error: false,
