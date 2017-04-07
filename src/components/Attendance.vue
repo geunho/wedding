@@ -58,6 +58,10 @@ export default {
     Modal
   },
 
+  mounted () {
+    this.$ga.trackPage('/attendance')
+  },
+
   data () {
     return {
       name: '',
@@ -67,17 +71,10 @@ export default {
     }
   },
 
-  created () {
-    // API 호출이 필요할지 검토.
-    /*
-     this.$http.get('http://localhost:8090/api/stories').then(response => {
-     this.feeds = response.data
-     })
-     */
-  },
-
   methods: {
     submit: function () {
+      this.$ga.trackEvent('submitAttendance', 'click', this.where)
+
       this.isSubmitted = true
       if (this.name != '' && this.where != '') {
         this.$http.post('/api/attendance', {

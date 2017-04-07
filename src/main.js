@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
 import LazyLoad from 'vue-lazyload'
+import Analytics from 'vue-analytics'
 import App from './App'
 
 import Invite from './components/Invite'
@@ -19,6 +20,9 @@ Vue.use(LazyLoad, {
   loading: false,
   attempt: 3,
   listenerEvents: ['scroll', 'resize', 'touchend', 'touchmove']
+})
+Vue.use(Analytics, {
+  id: 'UA-97023716-1'
 })
 
 const router = new Router({

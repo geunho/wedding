@@ -55,25 +55,9 @@
   export default {
     name: 'Location',
 
-    components: {
-
-    },
-
-    data () {
-      return {
-      }
-    },
-
-    created () {
-      // 사진 주소를 반환하는 API 호출
-      /*
-       this.$http.get('http://localhost:8090/api/stories').then(response => {
-       this.feeds = response.data
-       })
-       */
-    },
-
     mounted: function () {
+      this.$ga.trackPage('/location')
+
       // Load Map.js
       var el = document.createElement('script')
       el.onload = function () {

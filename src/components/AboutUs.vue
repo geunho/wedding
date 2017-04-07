@@ -97,18 +97,13 @@
 </template>
 
 <script>
-  export default {
-    name: 'AboutUs',
+export default {
+  name: 'AboutUs',
 
-//    created () {
-//      // 컨텐츠 API 호출로 반복 구성할 것. 1) 함꼐하는 시간 Vue, 2) 근호 시간 Vue, 3) 미경 시간 Vue
-//      /*
-//       this.$http.get('http://localhost:8090/api/stories').then(response => {
-//       this.feeds = response.data
-//       })
-//       */
-//    }
+  mounted () {
+    this.$ga.trackPage('/aboutus')
   }
+}
 </script>
 
 <style lang="stylus">

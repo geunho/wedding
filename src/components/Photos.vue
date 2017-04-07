@@ -22,6 +22,10 @@ export default {
     PhotoDetail
   },
 
+  mounted () {
+    this.$ga.trackPage('/photos')
+  },
+
   data () {
     return {
       baseUrl: '/images/original/',
