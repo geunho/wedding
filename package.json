@@ -59,7 +59,7 @@
     "rimraf": "^2.5.0",
     "style-loader": "^0.13.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^2.4.0",
+    "stylus-loader": "^3.0.2",
     "url-loader": "^0.5.7",
     "vue-template-compiler": "^2.2.6",
     "vue-hot-reload-api": "^2.0.11",
