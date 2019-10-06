@@ -14,7 +14,7 @@ app.use(function (req, res, next) {
 
 app.use('/api', router)
 
-app.listen(8090, 'localhost', function (err) {
+app.listen(8090, '0.0.0.0', function (err) {
   if (err) {
     console.log(err)
     return

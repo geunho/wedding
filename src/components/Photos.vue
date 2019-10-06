@@ -29,16 +29,14 @@ export default {
   data () {
     return {
       baseUrl: '/images/original/',
-      photos: [],
+      photos: [
+        'IMG_PHOTO_01.jpg', 'IMG_PHOTO_02.jpg', 'IMG_PHOTO_03.jpg',
+        'IMG_PHOTO_04.jpg', 'IMG_PHOTO_05.jpg', 'IMG_PHOTO_06.jpg',
+        'IMG_PHOTO_07.jpg', 'IMG_PHOTO_08.jpg', 'IMG_PHOTO_09.jpg', 'IMG_PHOTO_10.jpg'
+      ],
       isDetailOpened: false,
       selectedImage: ''
     }
-  },
-
-  created () {
-    this.$http.get('/api/photos').then(response => {
-      this.photos = response.data
-    })
   },
 
   methods: {

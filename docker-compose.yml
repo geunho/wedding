@@ -1,0 +1,8 @@
+version: "3.5"
+
+services:
+  web:
+    container_name: wd-web
+    image: geunho/wd-web
+    ports:
+      - "8081:80"

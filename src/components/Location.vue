@@ -109,7 +109,7 @@
         })
       }
       el.setAttribute('type', 'text/javascript')
-      el.setAttribute('src', 'https://openapi.map.naver.com/openapi/v3/maps.js?clientId=XijwVoHfiRYgMpPWAf0b')
+      el.setAttribute('src', 'https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=2754uh55v1')
       document.getElementsByTagName('head')[0].appendChild(el)
     }
   }

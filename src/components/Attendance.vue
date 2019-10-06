@@ -76,16 +76,6 @@ export default {
       this.$ga.trackEvent('submitAttendance', 'click', this.where)
 
       this.isSubmitted = true
-      if (this.name != '' && this.where != '') {
-        this.$http.post('/api/attendance', {
-          name: this.name,
-          where: this.where,
-          when: this.when
-        }).then(response => {
-          this.isSubmitted = true
-          console.log(JSON.stringify(response))
-        })
-      }
     }
   }
 }
