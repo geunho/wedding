@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    tools { nodejs "node-8.16.1" }
 
     stages {
         stage("NPM Build") {
@@ -7,7 +8,7 @@ pipeline {
                 echo "##################################"
                 echo "# NPM BUILD STARTS ##############"
                 echo "##################################"
-                sh "npm run build"
+                sh "npm install && npm run build"
             }
             /*post {
                 always{
