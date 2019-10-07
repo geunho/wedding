@@ -33,7 +33,7 @@
     "bootstrap-webpack": "0.0.5",
     "compression-webpack-plugin": "^0.4.0",
     "connect-history-api-fallback": "^1.1.0",
-    "css-loader": "^0.23.0",
+    "css-loader": "^0.28.11",
     "eslint": "^1.10.3",
     "eslint-friendly-formatter": "^1.2.2",
     "eslint-loader": "^1.2.0",
