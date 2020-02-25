@@ -1,4 +1,4 @@
-# wd
+# Wedding
 
 Geunho and Mikyeong's Wedding Invitation
-http://geunho-mikyeong.com/invite
+https://wedding.geunho.dev/invite
