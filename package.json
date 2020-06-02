@@ -60,7 +60,7 @@
     "style-loader": "^0.13.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
-    "url-loader": "^0.5.7",
+    "url-loader": "^0.6.2",
     "vue-template-compiler": "^2.2.6",
     "vue-hot-reload-api": "^2.0.11",
     "vue-html-loader": "^1.2.4",
