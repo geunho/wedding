@@ -56,7 +56,7 @@
     "karma-webpack": "^2.0.13",
     "less-loader": "^2.2.2",
     "phantomjs": "^1.9.19",
-    "rimraf": "^2.5.0",
+    "rimraf": "^3.0.2",
     "style-loader": "^0.13.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
