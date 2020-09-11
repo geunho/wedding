@@ -44,7 +44,7 @@
     "font-awesome-webpack": "0.0.4",
     "function-bind": "^1.0.2",
     "html-webpack-plugin": "^1.7.0",
-    "image-webpack-loader": "^3.2.0",
+    "image-webpack-loader": "^7.0.0",
     "imports-loader": "^0.6.5",
     "inject-loader": "^2.0.1",
     "jasmine-core": "^2.4.1",
