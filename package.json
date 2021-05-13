@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "body-parser": "^1.15.0",
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^5.0.1",
     "font-awesome": "^4.5.0",
     "less": "^2.6.0",
     "lodash": "^4.2.1",
